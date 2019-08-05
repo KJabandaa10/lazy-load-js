@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  section {
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+  section.action {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    p.text {
+      max-width: 500px;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+
+      transform: translateX(50%);
+      opacity: 0;
+      transition: all 1300ms;
+    }
+    .fade {
+      transform: translateX(0);
+      opacity: 1;
+      transition: all 500ms;
+    }
+  }
+}
